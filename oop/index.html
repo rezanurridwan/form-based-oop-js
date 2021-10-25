@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataBase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Start Header -->
+    <header>
+        <h1>DATABASES</h1>
+    </header>
+    <!-- End Header -->
+    <!-- Start Main -->
+    <div class="container">
+        <div class="left-side">
+            <form id="form">
+                <div class="form-group">
+                    <label for="input-name" class="label-input">Name</label>
+                    <input type="text" id="input-name" class="input" required>
+                </div>
+                <div class="form-group">
+                    <label for="input-email" class="label-input">Email</label>
+                    <input type="text" id="input-email" class="input" required>
+                </div>
+                <div class="form-group">
+                    <label for="input-gender" class="label-input">Gender</label>
+                    <select name="input" id="input-gender">
+                        <option value="" disabled selected>choose</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="input-address" class="label-input">Address</label>
+                    <input type="text" id="input-address" class="input" required>
+                </div>
+            </form>
+            <button class="btn-submit" id="btn-submit" onclick="addUser()">Add User</button>
+        </div>
+        <div class="right-side">
+            <div class="card">
+                <div id="show-data"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End Main -->
+
+    <!-- Start Footer -->
+    <footer>
+        <a href="https://dumbways.id/"><img src="img/duu.png" alt="logo du" class="du"></a>
+        <h6>All Reserved By Reza Nr &trade;</h6></footer>
+        <!-- End Footer -->
+    <script src="script.js"></script>
+</body>
+</html>

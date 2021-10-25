@@ -1,0 +1,205 @@
+* {
+    margin: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+    background-color: rgb(117, 105, 228);
+}
+
+/* start header */
+header {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    color: seashell;
+}
+/* end header */
+
+/* start main */
+.container {
+    border-radius: 10px;
+    display: flex;
+    background-color:white;
+    height: 500px;
+    width: 80%;
+    margin: 0 auto;
+}
+.left-side {
+    width: 30%;
+    padding: 30px;
+}
+form {
+    background-color:rgb(212, 220, 245);
+    height: 300px;
+    border-radius: 10px;
+    padding-top: 20px;
+    font-size: 15px;
+}
+.form-group .label-input {
+    margin-right: 10px;
+    background-color:cornflowerblue;
+    display:inline-block;
+    width: 70px;
+    height: 15px;
+    padding: 3px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+}
+.input {
+    width: 150px;
+}
+
+.input, select {
+    border-radius: 5px;
+    border: none;
+}
+select{
+    height: 20px;
+}
+button {
+    border-radius: 5px;
+    display:inline-block;
+    width: 70px;
+    border: none;
+    height: 20px;
+    padding: 1px;
+    color: rgb(247, 248, 196);
+    background-color:rgb(255, 149, 0);
+    opacity: .5;
+    cursor: pointer;
+}
+.btn-submit:hover {
+    background-color:rgb(255, 149, 0);
+    opacity: 1;
+    transform: scale(1.2);
+}
+.btn-submit {
+    margin: 0 130px
+}
+.btn-delete {
+    opacity: 1;
+}
+
+.du {
+    width: 40px;
+    opacity: .5;
+}
+.du:hover {
+    opacity: 1;
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: 2s;
+}
+/* Right Side */
+.right-side {
+    width: 70%;
+    border-radius: 10px;
+    box-shadow:0 0 2px 0px  silver;
+}
+.card h1 {
+    margin-top: 30px;
+    text-align: center;
+}
+.card #show-data {
+    text-align: center;
+}
+
+.text-center img {
+    margin-top: 60px;
+    height: 300px;
+}
+
+table {
+    padding: 10px;
+    margin:0 auto;
+}
+th, td {
+    width: 50%;
+}
+td {
+    background-color:rgb(115, 145, 235);
+    border-radius: 5px;
+    color: lightgoldenrodyellow;
+    font-size: 12px;
+}
+td:hover {
+    opacity: .5;
+}
+
+#email:hover {
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+/* end main */
+
+/* start footer */
+footer {
+    margin-top: 35px;
+    text-align: center;
+    color: snow;
+}
+/* end footer */
+
+
+/* Responsive Side */
+@media only screen and (max-width: 756px) {
+    .container {
+        flex-direction: column;
+        height: 100%;
+    }
+    .left-side {
+        width: 100%;
+        padding: 0;
+        margin-left: 0;
+    }
+    .input {
+        width: 65%;
+    }
+    .btn-submit {
+        margin-left: 150px;
+    }
+    .right-side {
+        width: 100%;
+        margin: 0;
+    }
+    tr {
+        flex-wrap: wrap;
+        width: 20%;
+    }
+    .img {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 360px) {
+
+    .container {
+        flex-direction: column;
+        height: 100%;
+    }
+    .left-side {
+        width: 100%;
+        padding: 0;
+        margin-left: 0;
+    }
+    .input {
+        width: 50%;
+    }
+    .btn-submit {
+        margin-left: 100px;
+    }
+    .right-side {
+        width: 100%;
+        margin: 0;
+    }
+    tr {
+        flex-wrap: wrap;
+        width: 20%;
+    }
+    .img {
+        width: 100%;
+    }
+}
